@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BulkBro — Hit Your Calories. Every Single Day.</title>
+<title>BulkBro — Bulk Smarter. Not Harder.</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +13,25 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 <style>
 :root{
-  --orange:#DF5A36;--orange-light:#f26b44;--orange-pale:#fdeee8;
-  --black:#0e0e0e;--gray-dark:#3a3a3a;--gray-mid:#7a7a7a;--gray-light:#e6e6e4;
-  --bg:#f7f6f4;--white:#fff;
+  --blue:#45658E;
+  --blue-light:#EAF0F7;
+  --bronze:#B87333;
+  --bronze-pale:#F7EEE5;
+  --black:#171312;
+  --gray-dark:#3A3632;
+  --gray-mid:#7B7670;
+  --gray-light:#E6E1D9;
+  --bg:#F3F0EB;
+  --white:#fff;
+
+  --orange:var(--blue);
+  --orange-light:#5477A4;
+  --orange-pale:var(--blue-light);
   --r-lg:28px;--r-md:18px;--r-sm:12px;
   --s-card:0 4px 32px rgba(0,0,0,.07),0 1px 4px rgba(0,0,0,.04);
   --s-heavy:0 32px 100px rgba(0,0,0,.14),0 4px 20px rgba(0,0,0,.07);
-  --s-btn:0 8px 32px rgba(232,93,53,.42);
-}
+  --s-btn:0 10px 34px rgba(69,101,142,.28);}
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--black);-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -47,7 +58,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 
 /* ── BUTTONS ── */
 .btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--orange);color:#fff;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:500;padding:16px 34px;border-radius:100px;text-decoration:none;box-shadow:var(--s-btn);transition:transform .2s,box-shadow .2s;border:none;cursor:pointer}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 44px rgba(232,93,53,.52)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 44px rgba(69,101,142,.36)}
 .btn-ghost{display:inline-flex;align-items:center;gap:8px;color:var(--gray-dark);font-size:15px;font-weight:400;text-decoration:none;transition:color .2s}
 .btn-ghost:hover{color:var(--orange)}
 
@@ -202,7 +213,7 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,.07);paddin
 .f-card.dark{background:var(--black);grid-column:span 2}
 .f-card.wide{grid-column:span 2}
 .f-icon{width:52px;height:52px;background:var(--orange-pale);border-radius:15px;display:flex;align-items:center;justify-content:center;margin-bottom:26px}
-.f-card.dark .f-icon{background:rgba(232,93,53,.18)}
+.f-card.dark .f-icon{background:rgba(69,101,142,.18)}
 .f-title{
   font-family:'Syne',sans-serif;
   font-size:24px;
@@ -383,8 +394,8 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,.07);paddin
   <div class="hero">
     <div class="hero-content fu vis">
       <div class="hero-badge"><span class="hero-dot"></span>Now on the App Store</div>
-      <h1>Hit your <span class="accent">calories.</span><br>Every single day.</h1>
-      <p class="body-lg" style="max-width:480px;margin-top:4px">Track calories, check in with your weight, and stay consistent with daily targets built for lean bulking.</p>
+      <h1>Bulk smarter.<br><span class="accent">Not harder.</span></h1>
+      <p class="body-lg" style="max-width:480px;margin-top:4px">The nutrition engine built for muscle growth. Hit calories, protect your streak, and let BulkBro adapt as you grow.</p>
       <div class="hero-actions">
         <a href="https://apps.apple.com/be/app/bulkbro/id6770476671" class="btn-primary" target="_blank" rel="noopener">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -413,13 +424,13 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,.07);paddin
 <section class="features" id="features">
   <div class="inner">
     <div class="fu"><div class="section-tag">Features</div></div>
-    <h2 class="fu d1">Simple tools for<br>consistent bulking.</h2>
+    <h2 class="fu d1">Built for the<br>bulk journey.</h2>
     <p class="body-lg fu d2" style="max-width:500px;margin-top:14px">Log calories, track weight, and review your progress without turning bulking into a spreadsheet.</p>
     <div class="features-grid" style="margin-top:56px">
 
       <!-- Calorie target -->
       <div class="f-card fu d1">
-        <div class="f-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E85D35" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+        <div class="f-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#45658E" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
         <div class="f-title">Track your daily<br>calorie target</div>
         <p class="body-md">Quickly log meals and keep your daily calorie target easy to see throughout the day.</p>
         <div class="stat-pill">
@@ -489,7 +500,7 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,.07);paddin
   <div class="inner">
     <div class="fu"><div class="section-tag">App Screens</div></div>
     <h2 class="fu d1">The whole journey,<br>in your pocket.</h2>
-    <p class="body-lg fu d2" style="max-width:480px;margin-top:14px">Three screens, one mission — track, log, and grow every single day.</p>
+    <p class="body-lg fu d2" style="max-width:480px;margin-top:14px">Feed the bulk, close the calorie gap, track progress, and stay consistent.</p>
     <div class="phones-row">
       <div class="phone-wrap fu d1" style="transform:rotate(-3deg)">
         <div class="phone-shell">
@@ -534,7 +545,7 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,.07);paddin
 <!-- ─── PROOF ─────────────────────────────────────────────────────────────── -->
 <section class="proof">
   <div class="proof-inner">
-    <p class="proof-quote fu">"Finally an app that <span class="accent">adjusts as you grow</span> — not just another calorie counter."</p>
+    <p class="proof-quote fu">"BulkBro feels like a <span class="accent">bulking coach</span> — not just another calorie tracker."</p>
     
   </div>
 </section>
@@ -545,7 +556,7 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,.07);paddin
   <div class="cta-blob cb2"></div>
   <div class="cta-inner">
     <div class="cta-tag fu">DOWNLOAD ON IOS</div>
-    <h2 class="fu d1">Start your<br><span class="accent">bulk journey.</span></h2>
+    <h2 class="fu d1">Feed the bulk.<br><span class="accent">Grow with intent.</span></h2>
     <p class="body-lg fu d2">Simple setup. Clear calorie targets. Start logging your meals and track your progress with BulkBro.</p>
     <div class="store-row fu d3">
       <a href="https://apps.apple.com/be/app/bulkbro/id6770476671" class="store-btn" target="_blank" rel="noopener">
